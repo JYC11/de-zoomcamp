@@ -1,0 +1,10 @@
+project code = disco-torus-339100
+
+ssh
+fingerprint = SHA256:xr1tsEhrLYDU6rjyM/qnDATp17MF4QJBroy+GQlFVYE admin
+
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/admin/Desktop/code/de-zoomcamp/week1/terraform_gcp/key/disco-torus-339100-3e3de655f8e5.json"
+
+vm external IP = 34.72.31.186
+
+ssh -i ~/.ssh/gcp admin@34.72.31.186

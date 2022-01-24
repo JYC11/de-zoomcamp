@@ -1,4 +1,5 @@
 URL="https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv"
+URL="https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv"
 
 python ingest_data.py \
       --user=root \
@@ -10,7 +11,7 @@ python ingest_data.py \
       --url=${URL}
 
 docker run -it \
-  --network=myapp_default \
+  --network=docker_sql_default \
   taxi_ingest:v001 \
     --user=root \
     --password=root \
